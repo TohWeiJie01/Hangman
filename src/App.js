@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Stickman from './components/Stickman';
 import WrongLetters from './components/WrongLetters';
+import Word from './components/Word';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='game-container'>
         <Stickman />
         <WrongLetters />
+        <Word />
       </div>
     </div>
   )
