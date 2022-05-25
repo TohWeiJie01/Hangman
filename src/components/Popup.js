@@ -7,8 +7,8 @@ const Popup = () => {
           <button id="play-button">Play Again</button>
         </div>
       </div>
-    )
+    );
   }
   
-  export default Popup
+  export default Popup;
   

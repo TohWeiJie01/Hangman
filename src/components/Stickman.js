@@ -21,7 +21,7 @@ const Stickman = () => {
       <line x1="140" y1="150" x2="120" y2="180" class="stickman-part" />
       <line x1="140" y1="150" x2="160" y2="180" class="stickman-part" />
     </svg>
-  )
+  );
 }
 
-export default Stickman
+export default Stickman;
