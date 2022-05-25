@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Notification = () => {
   return (
     <div class="notification-container" id="notification-container">

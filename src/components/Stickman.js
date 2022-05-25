@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Stickman = () => {
   return (
     <svg height="250" width="200" class="stickman-container">
