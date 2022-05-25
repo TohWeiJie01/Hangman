@@ -1,4 +1,4 @@
-const Header = () => {
+const WrongLetters = () => {
     return (
         <div class="wrong-letters-container">
           <div id="wrong-letters"></div>
