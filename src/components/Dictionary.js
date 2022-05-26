@@ -1,4 +1,4 @@
-var animals = [
+const animals = [
   "mouse",
   "cow",
   "tiger",
@@ -10,7 +10,7 @@ var animals = [
   "chicken",
   "dog",
   "pig"
-]
+];
 
 function Dictionary() {
   return animals[Math.floor(Math.random() * animals.length)];
