@@ -12,14 +12,14 @@ function App() {
   const [wrongLetters, setWrongLetters] = useState([]);
 
   return (
-    <div>
+    <>
       <Header />
       <div className='hangman-container'>
         <Stickman />
         <WrongLetters />
         <Word currentWord={Dictionary()} correctLetters={correctLetters} />
       </div>
-    </div>
+    </>
   );
 }
 
