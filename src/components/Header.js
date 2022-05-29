@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div>
-      <h1 className='text-center'>HANGMAN</h1>
-      <h4 classMame='text-center'>Guess the word!</h4>
-    </div>
+    <p style={{textAlign: "center"}}>
+      <h1 class='text-center'>HANGMAN</h1>
+      <h4 class='text-center'>GUESS THE WORD!</h4>
+    </p>
   );
 }
 
