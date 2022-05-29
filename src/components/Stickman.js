@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Stickman = ({wrongLetters}) => {
-  const numOfWrongLetters = wrongLetters.length;
-
+const Stickman = ({mistakes}) => {
   return (
     <svg height="250" width="200" className="stickman-container">
       {/*Pole*/}
-      {numOfWrongLetters > 0 && 
+      {mistakes > 0 && 
       <>
         <line x1="60" y1="20" x2="140" y2="20" /> 
         <line x1="140" y1="20" x2="140" y2="50" /> 
@@ -15,18 +13,18 @@ const Stickman = ({wrongLetters}) => {
       </>}
 
       {/*Head*/}
-      {numOfWrongLetters > 1 && <circle cx="140" cy="70" r="20" />}
+      {mistakes > 1 && <circle cx="140" cy="70" r="20" />}
     
       {/*Body*/}
-      {numOfWrongLetters > 2 && <line x1="140" y1="90" x2="140" y2="150" />}
+      {mistakes > 2 && <line x1="140" y1="90" x2="140" y2="150" />}
     
       {/*Arms*/}
-      {numOfWrongLetters > 3 && <line x1="140" y1="120" x2="120" y2="100" />}
-      {numOfWrongLetters > 4 && <line x1="140" y1="120" x2="160" y2="100" />}
+      {mistakes > 3 && <line x1="140" y1="120" x2="120" y2="100" />}
+      {mistakes > 4 && <line x1="140" y1="120" x2="160" y2="100" />}
     
       {/*Legs*/}
-      {numOfWrongLetters > 5 && <line x1="140" y1="150" x2="120" y2="180" />}
-      {numOfWrongLetters > 6 && <line x1="140" y1="150" x2="160" y2="180" />}
+      {mistakes > 5 && <line x1="140" y1="150" x2="120" y2="180" />}
+      {mistakes > 6 && <line x1="140" y1="150" x2="160" y2="180" />}
     </svg>
   );
 }
