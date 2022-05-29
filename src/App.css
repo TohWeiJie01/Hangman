@@ -3,9 +3,9 @@
   }
   
   body {
-    background-color: darkslategray;
-    color: lightgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,10 @@
   
   h1 {
     margin: 60px 0 0;
+  }
+
+  h4 {
+    color: dimgray;
   }
   
   .hangman-container {
@@ -28,7 +32,7 @@
   
   .stickman-container {
     fill: transparent;
-    stroke: white;
+    stroke: black;
     stroke-width: 5px;
     stroke-linecap: round;
   }
@@ -38,12 +42,14 @@
   }
   
   .wrong-letters-container {
+    color: darkslategray;
     position: absolute;
     top: 20px;
     right: 20px;
     display: flex;
     flex-direction: column;
     text-align: right;
+    font-weight: 700;
   }
   
   .wrong-letters-container p {
@@ -57,20 +63,25 @@
   .word {
     display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
   }
   
   .letter {
-    border-bottom: 3px solid deepskyblue;
+    border-bottom: 3px solid navy;
     display: inline-flex;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     margin: 0 3px;
-    height: 50px;
+    height: 30px;
     width: 20px;
+  }
+
+  .cat{
+    color: darkslategray;
+    font-weight: 700;
   }
   
   .popup-container {
@@ -87,17 +98,17 @@
   }
   
   .popup {
-    background: #2980b9;
+    background: white;
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
   }
-  
+
   .popup button {
     cursor: pointer;
-    background-color: #fff;
-    color: #2980b9;
+    background-color: steelblue;
+    color: white;
     border: 0;
     margin-top: 20px;
     padding: 12px 20px;
