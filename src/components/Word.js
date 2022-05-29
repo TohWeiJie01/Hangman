@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Word({currentWord, correctLetters}) {
+function Word({correctLetters, currentWord}) {
   return (
     <div className="word">
       {currentWord.split('').map((letter, index) => {
